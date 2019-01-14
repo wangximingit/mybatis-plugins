@@ -60,4 +60,8 @@ public class GeneratorSwagger2Doc extends PluginAdapter {
         field.addAnnotation("@JsonProperty(\""+introspectedColumn.getActualColumnName()+"\")");
         return super.modelFieldGenerated(field, topLevelClass, introspectedColumn, introspectedTable, modelClassType);
     }
+    @Override
+    public boolean modelExampleClassGenerated(TopLevelClass topLevelClass, IntrospectedTable introspectedTable) {
+        return false;
+    }
 }
