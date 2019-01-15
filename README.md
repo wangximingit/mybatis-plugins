@@ -42,6 +42,14 @@
      </plugins>
   </build>
 ```
+ 
+然后在generatorConfig.xml 中 加入`<plugin type="mybatis.generator.plugins.GeneratorSwagger2Doc"/>`
 
+```
+<context id="xxx-api">
+    <plugin type="mybatis.generator.plugins.GeneratorSwagger2Doc"/>
+   ......
+</context>  
+ ```
 -------------------------------------
  
